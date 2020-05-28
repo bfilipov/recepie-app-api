@@ -16,7 +16,8 @@ class ModelTests(TestCase):
         self.assertTrue(user.check_password(password))
 
     def test_new_user_email_normalized(self):
-        """Test that the email domain for a new user is normalized to case insensitive"""
+        """Test that the email domain for a new user
+        is normalized to case insensitive"""
         email = 'bacebogo@ABV.BG'
         password = 'test123'
         user = get_user_model().objects.create_user(
@@ -42,4 +43,3 @@ class ModelTests(TestCase):
 
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
-

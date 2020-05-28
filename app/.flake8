@@ -5,3 +5,5 @@ exclude =
   manage.py,
   settings.py
   app/settings.py
+  core/settings.py
+
